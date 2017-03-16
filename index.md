@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# calendar-layout
 
-You can use the [editor on GitHub](https://github.com/rs6g10/layoutday/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+> Calendar renders layout day events. It takes an array of start/end times and renders them as "events" on a day
+calendar. Start/end times are in minutes from 9:00am, and the calendar shows times ranging
+from 9:00am to 9:00pm.  Events are guaranteed not to overlap visually, and events with conflicting
+time ranges have equal widths.
+Implemented as a pure static page with minimal libraries and modules attached to a namespaced global, and no assets build/optimization step. The goal is to demonstrate scalable
+front end architecture (react) and a custom greedy algorithm - _A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage with the hope of finding a global optimum_.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Usage
+To start developing/building/running, fork and clone the project first, then make sure you have Node.js 4.x or higher.
+```
+npm i
+npm test
+npm start
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+After this you will can open [localhost:3000](http://localhost:3000) to open the application.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rs6g10/layoutday/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Tooling
+This application has been created using [create-react-app](https://github.com/facebookincubator/create-react-app). It doesn't uses babel or webpack. It would have been nice to SCSS for styles but for the sake of simplicity, it has been written in pure CSS.
