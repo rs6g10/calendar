@@ -1,0 +1,32 @@
+/* SCSS would be so nice!*/
+ul.calendar--timestamps > li {
+    font-size: 9px;
+    font-weight: 200;
+    line-height: 7px;
+    height: 30px;
+    text-align: right;
+    color: #a7a7a7;
+}
+
+ul.calendar--timestamps > li:nth-child(odd) {
+    font-size: 13px;
+    font-weight: 500;
+    color: #686868;
+}
+
+ul.calendar--timestamps > li > .period {
+    font-size: 9px;
+    font-weight: 200;
+    color: #a7a7a7;
+}
+
+ul.calendar--timestamps > li:nth-child(even) .period {
+    display: none;
+}
+
+ul.calendar--timestamps {
+    float: left;
+    margin: -5px 0 0 -60px;
+    padding: 0;
+    list-style-type: none;
+}

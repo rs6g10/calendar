@@ -1,0 +1,21 @@
+.calendar {
+    height: 720px;
+}
+
+.calendar--events {
+    position: relative;
+    width: 620px;
+    height: 720px;
+    margin: 10px 0 0 60px;
+
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.divider {
+    border-bottom: 1px solid #ececec;
+    height: 59px; /*1px for the border*/
+}
+
