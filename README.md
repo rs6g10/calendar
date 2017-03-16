@@ -20,4 +20,4 @@ npm start
 After this you will can open [localhost:3000](http://localhost:3000) to open the application.
 
 ## Tooling
-This application has been created using [create-react-app](https://github.com/facebookincubator/create-react-app). It doesn't uses babel or webpack. It would have been nice to SCSS for styles but for the sake of simplicity, it has been written in pure CSS.
+This application has been created using [create-react-app](https://github.com/facebookincubator/create-react-app). It would have been nice to use SCSS for styles but for the sake of simplicity, it has been written in pure CSS.
